@@ -23,15 +23,15 @@ def parse_label(file_name):
 
 def map_to_stress_score(emotion):
     if emotion in ['calm', 'neutral']:
-        return 0  # Low stress
+        return 1  # Low stress
     elif emotion == 'happy':
-        return 1  # Low-moderate stress
+        return 2  # Low-moderate stress
     elif emotion == 'sad':
-        return 2  # Moderate stress
+        return 3  # Moderate stress
     elif emotion in ['disgust', 'surprised']:
-        return 3  # High stress
+        return 4  # High stress
     elif emotion in ['angry', 'fearful']:
-        return 4  # Very high stress
+        return 5  # Very high stress
     else:
         return -1
 
@@ -79,3 +79,4 @@ if __name__ == "__main__":
         print("Please download and unzip the RAVDESS audio-only files and update the RAVDESS_PATH variable.")
     else:
         final_df = process_ravdess_dataset(RAVDESS_PATH, OUTPUT_CSV)
+
