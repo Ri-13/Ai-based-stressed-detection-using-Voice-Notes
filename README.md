@@ -14,8 +14,8 @@ Serveral libraries of Python were used:
 
  Output : Stress Score Mapping
  
- 0 -> Low Stress  |
- 1-> Low Moderate Stress |
- 2 -> Moderate Stress |
- 3 -> High Stress |
- 4 -> Very High Stress
+ 1 -> Low Stress  |
+ 2-> Low Moderate Stress |
+ 3 -> Moderate Stress |
+ 4 -> High Stress |
+ 5 -> Very High Stress
